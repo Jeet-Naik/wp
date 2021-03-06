@@ -1,0 +1,16 @@
+/*
+Theme Name: Twenty Twenty one Child
+Theme URI: http://wordpress.com/Twenty-Twenty-one/
+description: >-
+  Twenty Twenty one Theme
+Author: Jeet Naik
+Author URI: http://jeet.com
+Template: twentytwentyone
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain: twenty-fifteen-child
+*/
+
+@import url("../twentytwentyone/style.css");

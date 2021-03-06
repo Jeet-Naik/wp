@@ -93,13 +93,9 @@ function save_meta_values($postid)
 }
 add_action('save_post', 'save_meta_values');
 
-
-
-
 function my_admin_ajax() {
   wp_enqueue_script('custom',get_template_directory_uri() . '/assets/js/custom.js',array('jquery'));
   wp_localize_script( 'custom', 'myAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' )));
 }
-
 add_action('wp_enqueue_scripts', 'my_admin_ajax');
 ?>
