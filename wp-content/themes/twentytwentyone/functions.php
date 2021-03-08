@@ -626,22 +626,22 @@ function twentytwentyone_add_ie_class() {
 	</script>
 	<?php
 }
-add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
+// add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
 
-//save price
-add_action('wp_ajax_my_action', 'my_callback');
+// //save price
+// add_action('wp_ajax_my_action', 'my_callback');
 
-function my_callback() {
-  $price  =  esc_html__($_POST['price']);
-  $pid    =  esc_html__($_POST['pid']);
+// function my_callback() {
+//   $price  =  esc_html__($_POST['price']);
+//   $pid    =  esc_html__($_POST['pid']);
 
-  $res= update_post_meta($pid, 'price', __( $price) );
-	if($res)
-	{
-		echo "Updated successfully";
-	}
-	else{
-		echo "Seomething went wrong!";
-	}
-  wp_die();
-}
+//   $res= update_post_meta($pid, 'price', __( $price) );
+// 	if($res)
+// 	{
+// 		echo "Updated successfully";
+// 	}
+// 	else{
+// 		echo "Seomething went wrong!";
+// 	}
+//   wp_die();
+// }
