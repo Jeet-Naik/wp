@@ -62,7 +62,7 @@ function themes_taxonomy()
 {
     $posts = array('book');
     register_taxonomy(
-        'category',  // The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces).
+        'book_category',  // The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces).
         $posts,             // post type name
         array(
             'hierarchical' => true,
@@ -90,28 +90,11 @@ function themes_taxonomy()
 
 add_action('init', 'themes_taxonomy');
 
-// function themes_taxonomy2()
-// {
-//     register_taxonomy(
-//         'new',  // The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces).
-//         'books',             // post type name
-//         array(
-//             'hierarchical' => true,
-//             'label' => 'new', // display name
-//             'query_var' => true,
-//             'rewrite' => array(
-//                 'slug' => 'themes',    // This controls the base slug that will display before each term
-//                 'with_front' => false  // Don't display the category base before
-//             )
-//         )
-//     );
-// }
-// add_action('init', 'themes_taxonomy2');
 
 //meta bbox
 function custom_meta_box()
 {
-    add_meta_box("price", "Price", "custom_meta_box_markup", "book");
+    add_meta_box("price", "Book Data", "custom_meta_box_markup", "book");
 }
 add_action('add_meta_boxes', 'custom_meta_box');
 
@@ -132,8 +115,9 @@ function save_meta_values($postid)
 add_action('save_post', 'save_meta_values');
 
 function my_admin_ajax() {
-  wp_enqueue_script('custom',get_template_directory_uri() . '/assets/js/custom.js',array('jquery'));
+  wp_enqueue_script('custom',get_template_directory_uri() . '-child/assets/js/custom.js',array('jquery'));
   wp_localize_script( 'custom', 'myAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' )));
+  
 }
 add_action('wp_enqueue_scripts', 'my_admin_ajax');
 ?>
