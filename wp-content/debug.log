@@ -237,3 +237,187 @@ Stack trace:
 [09-Mar-2021 07:44:00 UTC] PHP Notice:  Undefined index: paged in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 77
 [09-Mar-2021 07:45:44 UTC] PHP Notice:  Undefined index: paged in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 77
 [09-Mar-2021 07:46:18 UTC] PHP Notice:  Undefined index: paged in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 77
+[09-Mar-2021 10:21:40 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 10:21:40 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 10:21:40 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 10:33:03 UTC] PHP Notice:  Undefined variable: querty in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 29
+[09-Mar-2021 10:33:12 UTC] PHP Notice:  Undefined variable: query in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 29
+[09-Mar-2021 10:39:05 UTC] PHP Notice:  Undefined variable: query in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 25
+[09-Mar-2021 10:39:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php:25
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-includes\template-loader.php(106): include()
+#1 G:\xampp\htdocs\wp\wp-blog-header.php(19): require_once('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\index.php(17): require('G:\\xampp\\htdocs...')
+#3 {main}
+  thrown in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 25
+[09-Mar-2021 10:40:36 UTC] PHP Notice:  Undefined variable: query in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 25
+[09-Mar-2021 10:40:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php:25
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-includes\template-loader.php(106): include()
+#1 G:\xampp\htdocs\wp\wp-blog-header.php(19): require_once('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\index.php(17): require('G:\\xampp\\htdocs...')
+#3 {main}
+  thrown in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 25
+[09-Mar-2021 10:47:10 UTC] PHP Notice:  Undefined index: cat in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 21
+[09-Mar-2021 10:47:10 UTC] PHP Notice:  Undefined variable: query in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 24
+[09-Mar-2021 10:47:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php:24
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-includes\template-loader.php(106): include()
+#1 G:\xampp\htdocs\wp\wp-blog-header.php(19): require_once('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\index.php(17): require('G:\\xampp\\htdocs...')
+#3 {main}
+  thrown in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 24
+[09-Mar-2021 10:47:57 UTC] PHP Notice:  Undefined variable: query in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 24
+[09-Mar-2021 10:47:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php:24
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-includes\template-loader.php(106): include()
+#1 G:\xampp\htdocs\wp\wp-blog-header.php(19): require_once('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\index.php(17): require('G:\\xampp\\htdocs...')
+#3 {main}
+  thrown in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 24
+[09-Mar-2021 10:49:42 UTC] PHP Notice:  Undefined variable: query in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 24
+[09-Mar-2021 10:49:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php:24
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-includes\template-loader.php(106): include()
+#1 G:\xampp\htdocs\wp\wp-blog-header.php(19): require_once('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\index.php(17): require('G:\\xampp\\htdocs...')
+#3 {main}
+  thrown in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 24
+[09-Mar-2021 10:53:33 UTC] PHP Notice:  Undefined variable: query in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 24
+[09-Mar-2021 10:53:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php:24
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-includes\template-loader.php(106): include()
+#1 G:\xampp\htdocs\wp\wp-blog-header.php(19): require_once('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\index.php(17): require('G:\\xampp\\htdocs...')
+#3 {main}
+  thrown in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 24
+[09-Mar-2021 10:57:27 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 10:57:27 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 10:57:27 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 10:57:27 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 10:57:47 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 10:57:47 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 10:57:47 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 11:03:32 UTC] PHP Parse error:  syntax error, unexpected end of file in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 261
+[09-Mar-2021 11:14:31 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 11:14:31 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 11:14:31 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 11:14:31 UTC] PHP Notice:  Undefined index: sort in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 47
+[09-Mar-2021 11:14:31 UTC] PHP Notice:  Undefined index: views in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 51
+[09-Mar-2021 11:14:31 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 11:14:31 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 11:14:53 UTC] PHP Notice:  Undefined index: sort in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 47
+[09-Mar-2021 11:14:53 UTC] PHP Notice:  Undefined index: views in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 51
+[09-Mar-2021 11:15:25 UTC] PHP Notice:  Undefined index: views in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 51
+[09-Mar-2021 11:15:47 UTC] PHP Notice:  Undefined index: views in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 51
+[09-Mar-2021 11:15:57 UTC] PHP Notice:  Undefined index: views in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 51
+[09-Mar-2021 11:22:56 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 11:22:56 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 11:22:56 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 11:30:53 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 11:30:53 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 11:30:53 UTC] PHP Notice:  Undefined index: getby in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 215
+[09-Mar-2021 11:50:13 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 11:50:13 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 11:50:13 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 11:50:19 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 11:50:19 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 11:50:19 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 12:06:56 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 12:06:56 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 12:06:56 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 12:09:26 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 12:09:26 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 12:09:26 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 12:09:45 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 12:09:45 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 12:09:45 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[09-Mar-2021 12:22:53 UTC] PHP Notice:  Undefined index: price__srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 256
+[09-Mar-2021 12:22:53 UTC] PHP Notice:  Undefined index: price__srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 260
+[09-Mar-2021 12:22:53 UTC] PHP Notice:  Undefined index: price__srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 256
+[09-Mar-2021 12:22:53 UTC] PHP Notice:  Undefined index: price__srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 260
+[09-Mar-2021 12:22:53 UTC] PHP Notice:  Undefined index: price__srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 256
+[09-Mar-2021 12:22:53 UTC] PHP Notice:  Undefined index: price__srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 260
+[10-Mar-2021 04:44:07 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[10-Mar-2021 04:44:07 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[10-Mar-2021 04:44:07 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 35
+[10-Mar-2021 04:44:07 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 46
+[10-Mar-2021 04:44:07 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\archive-book.php on line 47
+[10-Mar-2021 05:23:03 UTC] PHP Parse error:  syntax error, unexpected end of file in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 141
+[10-Mar-2021 06:14:23 UTC] PHP Notice:  Undefined variable: page in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 143
+[10-Mar-2021 06:49:29 UTC] PHP Parse error:  syntax error, unexpected 'add_theme_support' (T_STRING) in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 187
+[10-Mar-2021 06:51:33 UTC] PHP Parse error:  syntax error, unexpected 'add_theme_support' (T_STRING) in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 187
+[10-Mar-2021 07:10:21 UTC] PHP Warning:  include(customizer.php): failed to open stream: No such file or directory in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:10:21 UTC] PHP Warning:  include(): Failed opening 'customizer.php' for inclusion (include_path='G:\xampp\php\PEAR') in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:12:21 UTC] PHP Warning:  include(customizer.php): failed to open stream: No such file or directory in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:12:21 UTC] PHP Warning:  include(): Failed opening 'customizer.php' for inclusion (include_path='G:\xampp\php\PEAR') in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:14:21 UTC] PHP Warning:  include(customizer.php): failed to open stream: No such file or directory in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:14:21 UTC] PHP Warning:  include(): Failed opening 'customizer.php' for inclusion (include_path='G:\xampp\php\PEAR') in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:16:21 UTC] PHP Warning:  include(customizer.php): failed to open stream: No such file or directory in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:16:21 UTC] PHP Warning:  include(): Failed opening 'customizer.php' for inclusion (include_path='G:\xampp\php\PEAR') in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:29:39 UTC] PHP Warning:  include(customizer.php): failed to open stream: No such file or directory in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:29:39 UTC] PHP Warning:  include(): Failed opening 'customizer.php' for inclusion (include_path='G:\xampp\php\PEAR') in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:29:42 UTC] PHP Warning:  include(customizer.php): failed to open stream: No such file or directory in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:29:42 UTC] PHP Warning:  include(): Failed opening 'customizer.php' for inclusion (include_path='G:\xampp\php\PEAR') in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:29:47 UTC] PHP Warning:  include(customizer.php): failed to open stream: No such file or directory in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:29:47 UTC] PHP Warning:  include(): Failed opening 'customizer.php' for inclusion (include_path='G:\xampp\php\PEAR') in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:32:39 UTC] PHP Warning:  include(customizer.php): failed to open stream: No such file or directory in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:32:39 UTC] PHP Warning:  include(): Failed opening 'customizer.php' for inclusion (include_path='G:\xampp\php\PEAR') in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:34:39 UTC] PHP Warning:  include(customizer.php): failed to open stream: No such file or directory in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:34:39 UTC] PHP Warning:  include(): Failed opening 'customizer.php' for inclusion (include_path='G:\xampp\php\PEAR') in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php on line 178
+[10-Mar-2021 07:56:20 UTC] PHP Fatal error:  Cannot redeclare cd_customizer_settings() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php:181) in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 237
+[10-Mar-2021 07:56:21 UTC] PHP Fatal error:  Cannot redeclare cd_customizer_settings() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php:181) in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 237
+[10-Mar-2021 07:56:25 UTC] PHP Fatal error:  Cannot redeclare cd_customizer_settings() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php:181) in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 237
+[10-Mar-2021 08:29:25 UTC] PHP Fatal error:  Cannot redeclare cd_customizer_settings() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php:181) in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 234
+[10-Mar-2021 10:56:26 UTC] PHP Fatal error:  Cannot declare class WP_Widget_Recent_Posts, because the name is already in use in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 337
+[10-Mar-2021 11:03:31 UTC] PHP Deprecated:  The called constructor method for WP_Widget in WP_Widget_My_Custom_Recent_Posts is <strong>deprecated</strong> since version 4.3.0! Use <code>__construct()</code> instead. in G:\xampp\htdocs\wp\wp-includes\functions.php on line 4952
+[10-Mar-2021 11:03:32 UTC] PHP Deprecated:  The called constructor method for WP_Widget in WP_Widget_My_Custom_Recent_Posts is <strong>deprecated</strong> since version 4.3.0! Use <code>__construct()</code> instead. in G:\xampp\htdocs\wp\wp-includes\functions.php on line 4952
+[10-Mar-2021 11:03:38 UTC] PHP Deprecated:  The called constructor method for WP_Widget in WP_Widget_My_Custom_Recent_Posts is <strong>deprecated</strong> since version 4.3.0! Use <code>__construct()</code> instead. in G:\xampp\htdocs\wp\wp-includes\functions.php on line 4952
+[10-Mar-2021 11:03:39 UTC] PHP Deprecated:  The called constructor method for WP_Widget in WP_Widget_My_Custom_Recent_Posts is <strong>deprecated</strong> since version 4.3.0! Use <code>__construct()</code> instead. in G:\xampp\htdocs\wp\wp-includes\functions.php on line 4952
+[10-Mar-2021 11:03:56 UTC] PHP Deprecated:  The called constructor method for WP_Widget in WP_Widget_My_Custom_Recent_Posts is <strong>deprecated</strong> since version 4.3.0! Use <code>__construct()</code> instead. in G:\xampp\htdocs\wp\wp-includes\functions.php on line 4952
+[10-Mar-2021 11:04:04 UTC] PHP Deprecated:  The called constructor method for WP_Widget in WP_Widget_My_Custom_Recent_Posts is <strong>deprecated</strong> since version 4.3.0! Use <code>__construct()</code> instead. in G:\xampp\htdocs\wp\wp-includes\functions.php on line 4952
+[10-Mar-2021 11:04:44 UTC] PHP Deprecated:  The called constructor method for WP_Widget in WP_Widget_My_Custom_Recent_Posts is <strong>deprecated</strong> since version 4.3.0! Use <code>__construct()</code> instead. in G:\xampp\htdocs\wp\wp-includes\functions.php on line 4952
+[10-Mar-2021 11:05:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function __construct() in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php:245
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-includes\class-wp-widget-factory.php(61): WP_Widget_My_Custom_Recent_Posts->__construct()
+#1 G:\xampp\htdocs\wp\wp-includes\widgets.php(115): WP_Widget_Factory->register('WP_Widget_My_Cu...')
+#2 G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php(328): register_widget('WP_Widget_My_Cu...')
+#3 G:\xampp\htdocs\wp\wp-includes\class-wp-hook.php(287): wpb_load_widget('')
+#4 G:\xampp\htdocs\wp\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#5 G:\xampp\htdocs\wp\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#6 G:\xampp\htdocs\wp\wp-includes\widgets.php(1795): do_action('widgets_init')
+#7 G:\xampp\htdocs\wp\wp-includes\class-wp-hook.php(287): wp_widgets_init('')
+#8 G:\xampp\htdocs\wp\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#9 G:\xampp\htdocs\wp\wp-includes\plu in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 245
+[10-Mar-2021 11:21:14 UTC] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 294
+[10-Mar-2021 11:22:35 UTC] PHP Notice:  Undefined index: widget_id in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 321
+[10-Mar-2021 11:23:34 UTC] PHP Notice:  Undefined index: widget_id in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 321
+[10-Mar-2021 11:23:35 UTC] PHP Notice:  Undefined index: widget_id in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 321
+[10-Mar-2021 11:26:04 UTC] PHP Deprecated:  The called constructor method for WP_Widget in WP_Widget_My_Custom_Recent_Posts is <strong>deprecated</strong> since version 4.3.0! Use <code>__construct()</code> instead. in G:\xampp\htdocs\wp\wp-includes\functions.php on line 4952
+[10-Mar-2021 11:26:06 UTC] PHP Deprecated:  The called constructor method for WP_Widget in WP_Widget_My_Custom_Recent_Posts is <strong>deprecated</strong> since version 4.3.0! Use <code>__construct()</code> instead. in G:\xampp\htdocs\wp\wp-includes\functions.php on line 4952
+[10-Mar-2021 11:26:14 UTC] PHP Deprecated:  The called constructor method for WP_Widget in WP_Widget_My_Custom_Recent_Posts is <strong>deprecated</strong> since version 4.3.0! Use <code>__construct()</code> instead. in G:\xampp\htdocs\wp\wp-includes\functions.php on line 4952
+[10-Mar-2021 11:26:15 UTC] PHP Deprecated:  The called constructor method for WP_Widget in WP_Widget_My_Custom_Recent_Posts is <strong>deprecated</strong> since version 4.3.0! Use <code>__construct()</code> instead. in G:\xampp\htdocs\wp\wp-includes\functions.php on line 4952
+[10-Mar-2021 11:26:18 UTC] PHP Deprecated:  The called constructor method for WP_Widget in WP_Widget_My_Custom_Recent_Posts is <strong>deprecated</strong> since version 4.3.0! Use <code>__construct()</code> instead. in G:\xampp\htdocs\wp\wp-includes\functions.php on line 4952
+[10-Mar-2021 11:26:20 UTC] PHP Deprecated:  The called constructor method for WP_Widget in WP_Widget_My_Custom_Recent_Posts is <strong>deprecated</strong> since version 4.3.0! Use <code>__construct()</code> instead. in G:\xampp\htdocs\wp\wp-includes\functions.php on line 4952
+[10-Mar-2021 11:26:26 UTC] PHP Deprecated:  The called constructor method for WP_Widget in WP_Widget_My_Custom_Recent_Posts is <strong>deprecated</strong> since version 4.3.0! Use <code>__construct()</code> instead. in G:\xampp\htdocs\wp\wp-includes\functions.php on line 4952
+[10-Mar-2021 11:33:51 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 307
+[10-Mar-2021 11:37:31 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 307
+[10-Mar-2021 11:37:34 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 307
+[10-Mar-2021 11:37:42 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 307
+[10-Mar-2021 11:42:11 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 310
+[10-Mar-2021 11:42:14 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 310
+[10-Mar-2021 11:42:21 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 310
+[10-Mar-2021 11:42:47 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 310
+[10-Mar-2021 11:42:52 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 310
+[10-Mar-2021 11:46:25 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 312
+[10-Mar-2021 11:46:27 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 312
+[10-Mar-2021 11:47:22 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 291
+[10-Mar-2021 11:48:44 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 330
+[10-Mar-2021 11:51:05 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 330
+[10-Mar-2021 11:51:07 UTC] PHP Notice:  Undefined index: widget_id in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 323
+[10-Mar-2021 11:51:22 UTC] PHP Notice:  Undefined index: widget_id in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 323
+[10-Mar-2021 11:53:33 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 330
+[10-Mar-2021 11:55:26 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 331
+[10-Mar-2021 11:55:28 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 331
+[10-Mar-2021 11:56:26 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 335
+[10-Mar-2021 12:21:49 UTC] PHP Fatal error:  Cannot redeclare cd_customizer_settings() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\test\test.php:197) in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 236

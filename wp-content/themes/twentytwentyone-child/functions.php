@@ -33,45 +33,10 @@ function my_callback() {
 }
 
 
-//  Custom pagination function 
-// function cq_pagination($pages = '', $range = 4)
-// {
-    
-//     $showitems = ($range * 2)+1;
-//     global $paged;
-    
-//     if(empty($paged)) $paged = 1;
-//     if($pages == '')
-//     {
-//         global $wp_query;
-//         $pages = $wp_query->max_num_pages;
-//         if(!$pages)
-//         {
-//             $pages = 1;
-//         }
-//     }
-//     if(1 != $pages)
-//     {
-//         echo "<nav aria-label='Page navigation example'>  <ul class='pagination'> <span>Page ".$paged." of ".$pages."</span>";
-//         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo; First</a>";
-//         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo; Previous</a>";
-//         for ($i=1; $i <= $pages; $i++)
-//         {
-//             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
-//             {
-//                 echo ($paged == $i)? "<li class=\"page-item active\"><a class='page-link' id='".$i."'>".$i."</a></li>":"<li class='page-item' id='".$i."'> <a href='".get_pagenum_link($i)."' class=\"page-link\" id='".$i."'>".$i."</a></li>";
-//             }
-//         }
-//         if ($paged < $pages && $showitems < $pages) echo " <li class='page-item' id='".$i."'><a class='page-link' href=\"".get_pagenum_link($paged + 1)."\">i class='flaticon flaticon-back'></i></a></li>";
-//         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo " <li class='page-item'><a class='page-link' id='".$i."' href='".get_pagenum_link($pages)."'><i class='flaticon flaticon-arrow'></i></a></li>";
-//         echo "</ul></nav>\n";
-//     }
-// }
-
-
 //filter
 function ajax_filterposts_handler() {
     $category = esc_attr( $_POST['category'] );
+    $price=esc_attr( $_POST['price_srt'] );
 
    // $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
    $paged = $_POST['paged'];
@@ -86,11 +51,19 @@ function ajax_filterposts_handler() {
     if( $category != 'all' )
     $args['tax_query'] = array(
         array(
-            'taxonomy' => 'book_category',
-            'field' => 'id',
-            'terms' =>$category
+            'taxonomy'  =>  'book_category',
+            'field'     =>  'id',
+            'terms'     =>  $category
         )
     );
+
+    //meta value sorting
+    if( $price != 'default' )
+    {
+        $args['meta_key']   =   'price' ;
+        $args['orderby']    =   'meta_value' ;
+        $args['order']      =   $price ;
+    }
 
     $posts = 'No posts found.';
 
@@ -100,43 +73,42 @@ function ajax_filterposts_handler() {
 
         ob_start();
     ?>
-        <div class="wrap">
+    <div class="wrap">
  
- <div id="primary" class="content-area">
+<div id="primary" class="content-area">
 	 
-	 <main id="main" class="site-main" role="main">
+	<main id="main" class="site-main" role="main">
 	 
-		 <?php
+		<?php
 		 
-		 if($customQuery->have_posts() ): 
+		if($customQuery->have_posts() ): 
 		 
 			while($customQuery->have_posts()) :
 				
 					$customQuery->the_post();
-					
-					  global $post;
+					global $post;
 			 ?>
 	 
-			   <div class ="inner-content-wrap">
-			   
-					 <ul class ="cq-posts-list">
-					 
-					  <li>
+			<div class ="inner-content-wrap">  
+					<ul class ="cq-posts-list"> 
+					<li>
 						<h3 class ="cq-h3"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h3>
-							 <div>
-							   <ul>
-								 <div>
+							<div>
+							    <ul>
+								    <div>
 										 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-								 </div>
-							   </ul>
+                                         <br/>
+                                         <span><b>Price: </b>$<?php echo get_post_meta(get_the_ID(),'price',true) ?></span>
+								    </div>
+							    </ul>
 							   
-							   <ul>
-										 <p><?php echo the_content(); ?></p>
-							   </ul>
+							    <ul>
+									<p><?php echo the_content(); ?></p>
+							    </ul>
 							 
-							 </div>
+							</div>
 					   </li>
-					 </ul>
+					</ul>
 			 </div> <!-- end blog posts -->
 					   
 		 <?php endwhile; 
@@ -149,16 +121,8 @@ function ajax_filterposts_handler() {
 
         if ($total_pages > 1){
     
-             $current_page = max(1, get_query_var('paged'));
+            // $current_page = max(1, get_query_var('paged'));
 
-            // $args=array(
-            //     'base' => get_pagenum_link(1) . '%_%',
-            //     'format' => '/page/%#%',
-            //     'current' => $current_page,
-            //     'total' => $total_pages,
-            //     'prev_text'    => __('« prev'),
-            //     'next_text'    => __('next »'),
-            // );
             $args=array(
                 'base' => '%_%',
                 'format' => '?page=%#%',
@@ -202,7 +166,46 @@ function ajax_filterposts_handler() {
 add_action( 'wp_ajax_filterposts', 'ajax_filterposts_handler' );
 add_action( 'wp_ajax_nopriv_filterposts', 'ajax_filterposts_handler' );
 
+// book archive page filtering
+function filter_archive_drpdwn( $query ) {
+    if ( is_archive() ) {          
+            if (!empty( $_GET['category'] )) 
+            {
+                if( 'all' === $_GET['category'] )
+                {
+                    return;
+                }
+                $taxquery = array(
+                        array(
+                                'taxonomy' => 'book_category',
+                                'field' => 'slug',
+                                'terms' => $_GET['category'],
+                        ),
+                );
+                if( $_GET['price_srt'] != 'default')
+                {
+                    $query->set( 'meta_key', 'price' );
+                    $query->set( 'orderby', 'meta_value' );
+                    $query->set( 'order', $_GET['price_srt'] );
+                }
+                $query->set( 'tax_query', $taxquery );
+            }
+    }
+    return $query;
+}
+add_action( 'pre_get_posts', 'filter_archive_drpdwn');
 
 
 
-//new pagination
+// price sorting
+// function wpd_sort_by_meta( $query ) {
+//     if($query->is_archive())
+//     {
+//         $query->set( 'meta_key', 'price' );
+//         $query->set( 'orderby', 'meta_value' );
+//         $query->set( 'order', 'DESC' );
+//     }
+// }
+// add_action( 'pre_get_posts', 'wpd_sort_by_meta' );
+
+

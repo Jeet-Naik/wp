@@ -9,7 +9,8 @@ get_header();
 <center>
 <div class="filter-wrap">
     <div class="category">
-        <div class="field-title">Category</div>
+      
+        <label>Select category: </label>
         <?php $get_categories = get_categories(array('taxonomy'=>'book_category')); ?>
             <select class="js-category">
 				<option value="">--Select--</option>
@@ -25,6 +26,15 @@ get_header();
 						endif;
 					?>
             </select>
+            <br/><br/>
+		<label>Select Price order: </label>
+		<select name="price_srt" id="price_src">
+			<option value="default">Default</option>
+			<option value="ASC">Low to High</option>
+			<option value="DESC">High to Low</option>
+		</select>
+		<br/><br/>
+		<button  name="submit" id="filter">Filter</button>
     </div>
  
     <!-- <div class="date">
@@ -42,7 +52,8 @@ get_header();
 	<p>Content will be displayed here</p>
 </div>
 </center>
-<?php	
+
+<?php
 //end filter
 
 // $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;

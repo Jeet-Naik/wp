@@ -21,7 +21,12 @@ jQuery( document ).ready(function() {
 //fiters
 jQuery(document).ready(function($){
 
-	jQuery( ".js-category, .js-date" ).on( "change", function() {
+	ajaxTestFunction() ;
+	// jQuery( ".js-category, .js-date" ).on( "change", function() {
+	// 	ajaxTestFunction() ;	
+	// });
+
+	jQuery( "#filter" ).on( "click", function() {
 		ajaxTestFunction() ;	
 	});
 
@@ -48,12 +53,14 @@ jQuery(document).ready(function($){
 		};
 		// alert(page_num);
 		var category = $( '.js-category' ).val();
-		var date = $( '.js-date' ).val()
+		var price_srt = $( '#price_src' ).val();
+		// alert(price_srt);
+		
         // alert(category);
 		data = {
 			'action': 'filterposts',
 			'category': category,
-			'date': date,
+			'price_srt': price_srt,
 			'paged':page_num
 		};
 
