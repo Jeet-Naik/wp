@@ -88,4 +88,11 @@ jQuery(document).ready(function($){
 			}
 		});
 	}
+
+	jQuery(window).load(function() {
+		alert('slidee');
+		jQuery('.flexslider').flexslider({
+		  animation: "slide"
+		});
+	  });
 });

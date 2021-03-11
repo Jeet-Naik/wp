@@ -503,3 +503,69 @@ Stack trace:
 [10-Mar-2021 13:27:27 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
 [10-Mar-2021 13:27:31 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
 [10-Mar-2021 13:27:31 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 04:47:25 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 04:47:25 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 05:38:05 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 05:38:05 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 05:38:15 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 05:38:15 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 05:42:17 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 05:42:17 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 05:42:29 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 05:42:29 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 05:42:36 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 05:42:36 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 05:47:01 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 05:47:01 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 05:49:07 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 05:49:07 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 05:49:16 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 05:49:16 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 05:49:38 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 05:49:38 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:15:44 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:15:44 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:18:14 UTC] PHP Notice:  Undefined variable: row in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 21
+[11-Mar-2021 06:18:15 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:18:15 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:18:28 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:18:28 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:18:31 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:18:31 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:19:36 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:19:36 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:19:57 UTC] PHP Notice:  Undefined variable: rows in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 24
+[11-Mar-2021 06:20:11 UTC] PHP Notice:  Undefined variable: bgimg in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 34
+[11-Mar-2021 06:20:11 UTC] PHP Warning:  A non-numeric value encountered in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 34
+[11-Mar-2021 06:20:11 UTC] PHP Warning:  A non-numeric value encountered in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 34
+[11-Mar-2021 06:20:11 UTC] PHP Notice:  Undefined variable: bgimg in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 34
+[11-Mar-2021 06:20:11 UTC] PHP Warning:  A non-numeric value encountered in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 34
+[11-Mar-2021 06:20:11 UTC] PHP Warning:  A non-numeric value encountered in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 34
+[11-Mar-2021 06:20:12 UTC] PHP Notice:  Undefined variable: bgimg in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 34
+[11-Mar-2021 06:20:12 UTC] PHP Warning:  A non-numeric value encountered in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 34
+[11-Mar-2021 06:20:12 UTC] PHP Warning:  A non-numeric value encountered in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 34
+[11-Mar-2021 06:20:31 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:20:31 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:21:23 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:21:23 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:21:30 UTC] PHP Notice:  Undefined index: url in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 33
+[11-Mar-2021 06:21:30 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:21:30 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:21:45 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:21:45 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:22:51 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:22:51 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:23:07 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:23:07 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:25:44 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:25:44 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:25:45 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:25:45 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:25:53 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:25:53 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:25:54 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:25:54 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:25:55 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:25:55 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39
+[11-Mar-2021 06:26:07 UTC] PHP Notice:  Undefined index: category in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 38
+[11-Mar-2021 06:26:07 UTC] PHP Notice:  Undefined index: price_srt in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 39

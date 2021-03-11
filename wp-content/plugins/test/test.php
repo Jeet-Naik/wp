@@ -125,6 +125,8 @@ add_action('save_post', 'save_meta_values');
 //Custom js
 function my_admin_ajax() {
   wp_enqueue_script( 'custom', get_template_directory_uri() . '-child/assets/js/custom.js',array( 'jquery' ) );
+  wp_enqueue_style( 'flexslider', get_template_directory_uri() . '-child/assets/css/flexslider.css' );
+  wp_enqueue_script( 'flexslider', get_template_directory_uri() . '-child/assets/js/jquery.flexslider.js',array( 'jquery' ) );
   wp_localize_script( 'custom', 'myAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' )));
   
 }
