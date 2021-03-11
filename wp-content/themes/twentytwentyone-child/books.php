@@ -13,7 +13,6 @@ get_header();
         <label>Select category: </label>
         <?php $get_categories = get_categories(array('taxonomy'=>'book_category')); ?>
             <select class="js-category">
-				<option value="">--Select--</option>
                 <option value="all">All</option>
                 <?php
 					if ( $get_categories ) :
@@ -36,14 +35,6 @@ get_header();
 		<br/><br/>
 		<button  name="submit" id="filter">Filter</button>
     </div>
- 
-    <!-- <div class="date">
-        <div class="field-title">Sort by</div>
-        <select class="js-date">
-            <option value="new">Newest</option>
-            <option value="old">Oldest</option>
-        </select>
-    </div> -->
 </div>
 </center>
 

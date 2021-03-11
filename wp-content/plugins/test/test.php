@@ -131,7 +131,6 @@ function my_admin_ajax() {
 add_action( 'wp_enqueue_scripts', 'my_admin_ajax' );
 
 //Sort code
-
 add_shortcode('books','fun_book_listing');
 
 add_action( 'wp_enqueue_scripts', 'my_admin_ajax' );
@@ -165,7 +164,31 @@ function fun_book_listing( $atts ) {
 
      if ($customQuery->have_posts()) :
         while ($customQuery->have_posts()) : $customQuery->the_post();
-           $return_string .= '<li><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
+        //    $return_string .= '<li><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
+
+        ?>
+        <div class ="inner-content-wrap">  
+        <ul class ="cq-posts-list"> 
+        <li>
+            <h3 class ="cq-h3"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h3>
+                <div>
+                    <ul>
+                        <div>
+                             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+                             <br/>
+                             <span><b>Price: </b>$<?php echo get_post_meta(get_the_ID(),'price',true) ?></span>
+                        </div>
+                    </ul>
+                   
+                    <ul>
+                        <p><?php echo the_content(); ?></p>
+                    </ul>
+                 
+                </div>
+        </li>
+        </ul>
+        </div>
+        <?php
         endwhile;
      endif;
      $return_string .= '</ul>';
@@ -330,31 +353,30 @@ class WP_Widget_My_Custom_Recent_Posts extends WP_Widget {
 
     function form( $instance ) {
         $title = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : '';
-        
+
         $category = isset( $instance['category'] ) ? esc_attr( $instance['category'] ) : '';
         
         if ( !isset($instance['number']) || !$number = (int) $instance['number'] )
             $number = 5;
-?>
-        <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
-        <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></p>
+            ?>
+            <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></p>
 
-        <p><label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of posts to show:'); ?></label>
-        <input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo $number; ?>" size="3" /></p>
+            <p><label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of posts to show:'); ?></label>
+            <input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo $number; ?>" size="3" /></p>
 
-        <p><label for="<?php echo $this->get_field_id('category'); ?>"><?php _e('Select category:'); ?></label>
-        <select id="<?php echo $this->get_field_id('category'); ?>" name="<?php echo $this->get_field_name('category'); ?>">
+            <p><label for="<?php echo $this->get_field_id('category'); ?>"><?php _e('Select category:'); ?></label>
+            <select id="<?php echo $this->get_field_id('category'); ?>" name="<?php echo $this->get_field_name('category'); ?>">
             <option value="all">All</option>
             <?php $get_categories = get_categories(array('taxonomy'=>'book_category')); ?>
             <?php
 			if ( $get_categories ) :
-				
 				foreach ( $get_categories as $cat ) :
-			?>
-			 <option value="<?php echo $cat->name; ?>"<?php if( $category == $cat->name ){echo 'selected';} ?>>
-			<?php echo $cat->name; ?>
-			</option>
-			<?php 
+			    ?>
+			    <option value="<?php echo $cat->name; ?>"<?php selected( $category, $cat->name ); ?>>
+			        <?php echo $cat->name; ?>
+			    </option>
+			    <?php 
                 endforeach; 
 			endif;
 			?>

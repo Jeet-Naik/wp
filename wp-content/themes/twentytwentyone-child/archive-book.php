@@ -32,7 +32,7 @@ $description = get_the_archive_description();
 				
 				foreach ( $get_categories as $cat ) :
 			?>
-			 <option value="<?php echo $cat->name; ?>"<?php if(isset($_GET['category']) == $cat->name ){echo 'selected';} ?>>
+			 <option value="<?php echo $cat->slug; ?>"<?php if(isset($_GET['category']) == $cat->name ){echo 'selected';} ?>>
 			<?php echo $cat->name; ?>
 			</option>
 			<?php endforeach; 

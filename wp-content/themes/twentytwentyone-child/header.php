@@ -30,7 +30,7 @@
 		get_template_part( 'template-parts/header/site-header' ); 
 	
 	}
-	 elseif( get_theme_mod( 'cd_header_display' ) == 'Header_2' )
+	elseif( get_theme_mod( 'cd_header_display' ) == 'Header_2' )
 	{
 		get_template_part( 'template-parts/header/site-header-2' ); 
 	}  

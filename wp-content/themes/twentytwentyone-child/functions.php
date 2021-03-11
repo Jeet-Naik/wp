@@ -49,13 +49,17 @@ function ajax_filterposts_handler() {
 
     //taxonomy
     if( $category != 'all' )
-    $args['tax_query'] = array(
-        array(
-            'taxonomy'  =>  'book_category',
-            'field'     =>  'id',
-            'terms'     =>  $category
-        )
-    );
+    {
+        $args['tax_query'] = array(
+            array(
+                'taxonomy'  =>  'book_category',
+                'field'     =>  'id',
+                'terms'     =>  $category
+            )
+        );
+    }
+
+    
 
     //meta value sorting
     if( $price != 'default' )
