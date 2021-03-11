@@ -22,9 +22,7 @@ jQuery( document ).ready(function() {
 jQuery(document).ready(function($){
 
 	ajaxTestFunction() ;
-	// jQuery( ".js-category, .js-date" ).on( "change", function() {
-	// 	ajaxTestFunction() ;	
-	// });
+
 
 	jQuery( "#filter" ).on( "click", function() {
 		ajaxTestFunction() ;	
@@ -33,13 +31,7 @@ jQuery(document).ready(function($){
 	// And add a listener/callback for the pagination clicks.
 	jQuery( '.filtered-posts' ).on( 'click', '.page-numbers', function( e ){
 		e.preventDefault();
-	
-		// var paged = /[\?&]paged=(\d+)/.test( this.href ) && RegExp.$1;
 		var paged=$(this).text();
-			// alert($(this).text());
-			// $(this).attr('href');
-			
-		// alert(paged);
 		ajaxTestFunction( paged );
 	});
 
@@ -90,9 +82,9 @@ jQuery(document).ready(function($){
 	}
 
 	jQuery(window).load(function() {
-		alert('slidee');
+		// alert('slidee');
 		jQuery('.flexslider').flexslider({
 		  animation: "slide"
 		});
-	  });
+	});
 });

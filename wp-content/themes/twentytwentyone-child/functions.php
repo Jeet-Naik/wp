@@ -172,7 +172,7 @@ add_action( 'wp_ajax_nopriv_filterposts', 'ajax_filterposts_handler' );
 
 // book archive page filtering
 function filter_archive_drpdwn( $query ) {
-    if ( is_archive() ) {          
+    if ( is_post_type_archive( 'book' )  ) {          
             if (!empty( $_GET['category'] )) 
             {
                 if( 'all' === $_GET['category'] )
@@ -186,7 +186,7 @@ function filter_archive_drpdwn( $query ) {
                                 'terms' => $_GET['category'],
                         ),
                 );
-                if( $_GET['price_srt'] != 'default')
+                if( $_GET['price_srt'] != 'default' )
                 {
                     $query->set( 'meta_key', 'price' );
                     $query->set( 'orderby', 'meta_value' );
@@ -197,7 +197,7 @@ function filter_archive_drpdwn( $query ) {
     }
     return $query;
 }
-add_action( 'pre_get_posts', 'filter_archive_drpdwn');
+add_action( 'pre_get_posts', 'filter_archive_drpdwn' );
 
 
 
