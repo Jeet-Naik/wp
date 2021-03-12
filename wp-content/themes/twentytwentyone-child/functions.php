@@ -45,6 +45,7 @@ function ajax_filterposts_handler() {
         'post_status' => 'publish',
         'posts_per_page' => 2,
         'paged' => $paged ,
+    
     );
 
     //taxonomy
@@ -79,82 +80,82 @@ function ajax_filterposts_handler() {
     ?>
     <div class="wrap">
  
-<div id="primary" class="content-area">
-	 
-	<main id="main" class="site-main" role="main">
-	 
-		<?php
-		 
-		if($customQuery->have_posts() ): 
-		 
-			while($customQuery->have_posts()) :
-				
-					$customQuery->the_post();
-					global $post;
-			 ?>
-	 
-			<div class ="inner-content-wrap">  
-					<ul class ="cq-posts-list"> 
-					<li>
-						<h3 class ="cq-h3"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h3>
-							<div>
-							    <ul>
-								    <div>
-										 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-                                         <br/>
-                                         <span><b>Price: </b>$<?php echo get_post_meta(get_the_ID(),'price',true) ?></span>
-								    </div>
-							    </ul>
-							   
-							    <ul>
-									<p><?php echo the_content(); ?></p>
-							    </ul>
-							 
-							</div>
-					   </li>
-					</ul>
-			 </div> <!-- end blog posts -->
-					   
-		 <?php endwhile; 
-		 
-	  endif; 
-  
-
-        //pagination
-        $total_pages = $customQuery->max_num_pages;
-
-        if ($total_pages > 1){
-    
-            // $current_page = max(1, get_query_var('paged'));
-
-            $args=array(
-                'base' => '%_%',
-                'format' => '?page=%#%',
-                'current' => $paged,
-                'total' => $total_pages,
-                'prev_text'    => __('« prev'),
-                'next_text'    => __('next »'),
-            );
-
-            $links = paginate_links($args);
-
-            if ( $links ) {
-                echo '<div class="pagination">';
-                    echo $links;
-                echo '</div>';
-            }
+    <div id="primary" class="content-area">
+        
+        <main id="main" class="site-main" role="main">
+        
+            <?php
             
-        }
-      
-		wp_reset_query();
+            if($customQuery->have_posts() ): 
+        
+            while($customQuery->have_posts()) :
+                
+                    $customQuery->the_post();
+                    global $post;
+            ?>
+        
+                    <div class ="inner-content-wrap">  
+                            <ul class ="cq-posts-list"> 
+                            <li>
+                                <h3 class ="cq-h3"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h3>
+                                    <div>
+                                        <ul>
+                                            <div>
+                                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+                                                <br/>
+                                                <span><b>Price: </b>$<?php echo get_post_meta(get_the_ID(),'price',true) ?></span>
+                                            </div>
+                                        </ul>
+                                    
+                                        <ul>
+                                            <p><?php echo the_content(); ?></p>
+                                        </ul>
+                                    
+                                    </div>
+                            </li>
+                            </ul>
+                    </div> <!-- end blog posts -->
+                        
+            <?php endwhile; 
+            
+        endif; 
+    
 
-		  ?>	
- 
-		 </main><!-- #main -->
-		 
-	 </div><!-- #primary -->
-		 
- </div><!-- .wrap -->
+            //pagination
+            $total_pages = $customQuery->max_num_pages;
+
+            if ($total_pages > 1){
+        
+                // $current_page = max(1, get_query_var('paged'));
+
+                $args=array(
+                    'base' => '%_%',
+                    'format' => '?page=%#%',
+                    'current' => $paged,
+                    'total' => $total_pages,
+                    'prev_text'    => __('« prev'),
+                    'next_text'    => __('next »'),
+                );
+
+                $links = paginate_links($args);
+
+                if ( $links ) {
+                    echo '<div class="pagination">';
+                        echo $links;
+                    echo '</div>';
+                }
+                
+            }
+        
+            wp_reset_query();
+
+            ?>	
+    
+            </main><!-- #main -->
+            
+        </div><!-- #primary -->
+            
+    </div><!-- .wrap -->
 <?php
     $posts = ob_get_clean();
      
@@ -175,7 +176,7 @@ function filter_archive_drpdwn( $query ) {
     if ( is_post_type_archive( 'book' )  ) {          
             if (!empty( $_GET['category'] )) 
             {
-                if( 'all' === $_GET['category'] )
+                if( 'all' === esc_html( $_GET['category'] ) )
                 {
                     return;
                 }

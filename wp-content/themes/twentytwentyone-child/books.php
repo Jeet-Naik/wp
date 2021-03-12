@@ -51,7 +51,7 @@ get_header();
     <div class="category">
       
         <label>Select category: </label>
-        <?php $get_categories = get_categories(array('taxonomy'=>'book_category')); ?>
+            <?php $get_categories = get_categories( array( 'taxonomy'=>'book_category' ) ); ?>
             <select class="js-category">
                 <option value="all">All</option>
                 <?php

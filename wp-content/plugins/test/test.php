@@ -205,15 +205,17 @@ function fun_book_listing( $atts ) {
 //custom wirdget area
 function wpb_widgets_init() {
  
-    register_sidebar( array(
-        'name'          => __('Books Sidebar'),
-        'id'            => 'custom-books-widget',
-        'description'   => __( 'Appears on the books archive page'),
-        'before_widget' => '<div class="chw-widget">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="chw-title">',
-        'after_title'   => '</h2>',
-    ) );
+    register_sidebar( 
+        array(
+            'name'          => __('Books Sidebar'),
+            'id'            => 'custom-books-widget',
+            'description'   => __( 'Appears on the books archive page'),
+            'before_widget' => '<div class="chw-widget">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2 class="chw-title">',
+            'after_title'   => '</h2>',
+        ) 
+    );
  
 }
 add_action( 'widgets_init', 'wpb_widgets_init' );

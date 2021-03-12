@@ -35,7 +35,7 @@ $description = get_the_archive_description();
 				foreach ( $get_categories as $cat ) :
 					 if(isset($_GET['category'])){
 						?>
-						<option value="<?php echo $cat->slug; ?>"<?php selected($_GET['category'],$cat->slug); ?>>
+						<option value="<?php echo $cat->slug; ?>"<?php selected( esc_html( $_GET['category'] ) ,$cat->slug); ?>>
 						<?php
 					}
 					else{
@@ -57,7 +57,7 @@ $description = get_the_archive_description();
 			<option value="default">Default</option>
 			<?php
 			if(isset($_GET['price_srt'])){
-				?><option value='ASC' <?php  selected($_GET['price_srt'],'ASC'); ?>>Low to High</option><?php
+				?><option value='ASC' <?php  selected( esc_html( $_GET['price_srt'] ),'ASC'); ?>>Low to High</option><?php
 			}
 			else{
 				?><option value='ASC'>Low to High</option><?php
@@ -65,15 +65,11 @@ $description = get_the_archive_description();
 
 			<?php
 			if(isset($_GET['price_srt'])){
-				?><option value="DESC"  <?php if($_GET['price_srt'] == 'DESC'){echo 'selected';} ?>>High to Low</option><?php
+				?><option value="DESC"  <?php selected( esc_html( $_GET['price_srt'] ),'DESC'); ?>>High to Low</option><?php
 			}
 			else{
 				?><option value="DESC" >High to Low</option><?php
-			} ?>
-
-			
-			
-			
+			} ?>		
 		</select>
 		<br/><br/>
 		<input type="submit" value="Filter" name="submit">

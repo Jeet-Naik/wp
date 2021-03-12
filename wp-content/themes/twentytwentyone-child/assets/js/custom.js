@@ -1,3 +1,4 @@
+//Postmeta uspdate form 
 jQuery( document ).ready(function() {
     jQuery(document).on("click","#btnUpdate",function() {
         var pid=jQuery("#pid").val();
@@ -28,7 +29,7 @@ jQuery(document).ready(function($){
 		ajaxTestFunction() ;	
 	});
 
-	// And add a listener/callback for the pagination clicks.
+	// listener/callback for the pagination clicks.
 	jQuery( '.filtered-posts' ).on( 'click', '.page-numbers', function( e ){
 		e.preventDefault();
 		var paged=$(this).text();
@@ -43,12 +44,10 @@ jQuery(document).ready(function($){
 		{
 			page_num=1;
 		};
-		// alert(page_num);
+
 		var category = $( '.js-category' ).val();
 		var price_srt = $( '#price_src' ).val();
-		// alert(price_srt);
-		
-        // alert(category);
+	
 		data = {
 			'action': 'filterposts',
 			'category': category,

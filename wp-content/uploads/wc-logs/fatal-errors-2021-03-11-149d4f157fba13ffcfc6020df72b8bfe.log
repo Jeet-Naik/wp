@@ -1,0 +1,24 @@
+2021-03-11T14:04:03+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php:10
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-includes\template-loader.php(106): include()
+#1 G:\xampp\htdocs\wp\wp-blog-header.php(19): require_once('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\index.php(17): require('G:\\xampp\\htdocs...')
+#3 {main}
+  thrown in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 10
+
+2021-03-11T14:13:21+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php:10
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-includes\template-loader.php(106): include()
+#1 G:\xampp\htdocs\wp\wp-blog-header.php(19): require_once('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\index.php(17): require('G:\\xampp\\htdocs...')
+#3 {main}
+  thrown in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 10
+
+2021-03-11T14:14:11+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php:10
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-includes\template-loader.php(106): include()
+#1 G:\xampp\htdocs\wp\wp-blog-header.php(19): require_once('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\index.php(17): require('G:\\xampp\\htdocs...')
+#3 {main}
+  thrown in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\books.php on line 10
+
