@@ -45,6 +45,12 @@ function ajax_filterposts_handler() {
         'post_status' => 'publish',
         'posts_per_page' => 2,
         'paged' => $paged ,
+        // 'date_query' => array(
+		// 	//set date ranges with strings!
+		// 	'after' => 'today',
+		// 	//allow exact matches to be returned
+		// 	'inclusive'         => true,
+		// ),
     
     );
 
@@ -110,7 +116,6 @@ function ajax_filterposts_handler() {
                                         <ul>
                                             <p><?php echo the_content(); ?></p>
                                         </ul>
-                                    
                                     </div>
                             </li>
                             </ul>
@@ -184,14 +189,14 @@ function filter_archive_drpdwn( $query ) {
                         array(
                                 'taxonomy' => 'book_category',
                                 'field' => 'slug',
-                                'terms' => $_GET['category'],
+                                'terms' => esc_html($_GET['category']),
                         ),
                 );
                 if( $_GET['price_srt'] != 'default' )
                 {
                     $query->set( 'meta_key', 'price' );
                     $query->set( 'orderby', 'meta_value' );
-                    $query->set( 'order', $_GET['price_srt'] );
+                    $query->set( 'order', esc_html($_GET['price_srt'] ));
                 }
                 $query->set( 'tax_query', $taxquery );
             }
@@ -214,3 +219,117 @@ add_action( 'pre_get_posts', 'filter_archive_drpdwn' );
 // add_action( 'pre_get_posts', 'wpd_sort_by_meta' );
 
 
+//Woocommerce support
+function mytheme_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+
+//woocommerce 
+remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
+add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
+
+// //woocommerce 
+// remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
+// add_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title',9 );
+
+//Single product page
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 15 );
+
+
+//
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price',10 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 16 );
+
+//
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 9 );
+
+
+//ajax add to cart ajax callback
+add_action('wp_ajax_woocommerce_ajax_add_to_cart', 'woocommerce_ajax_add_to_cart');
+add_action('wp_ajax_nopriv_woocommerce_ajax_add_to_cart', 'woocommerce_ajax_add_to_cart');
+
+function my_function_custom_archive_description() {
+	$new_description = 'Welcome to my shop, Game hard!.'; 
+	return $new_description; 
+} 
+        
+function woocommerce_ajax_add_to_cart() {
+
+            $product_id = apply_filters('woocommerce_add_to_cart_product_id', absint($_POST['product_id']));
+            $quantity = empty($_POST['quantity']) ? 1 : wc_stock_amount($_POST['quantity']);
+            $variation_id = absint($_POST['variation_id']);
+            $passed_validation = apply_filters('woocommerce_add_to_cart_validation', true, $product_id, $quantity);
+            $product_status = get_post_status($product_id);
+
+            if ($passed_validation && WC()->cart->add_to_cart($product_id, $quantity, $variation_id) && 'publish' === $product_status) {
+
+                do_action('woocommerce_ajax_added_to_cart', $product_id);
+
+                if ('yes' === get_option('woocommerce_cart_redirect_after_add')) {
+                    wc_add_to_cart_message(array($product_id => $quantity), true);
+                }
+
+                WC_AJAX :: get_refreshed_fragments();
+            } else {
+
+                $data = array(
+                    'error' => true,
+                    'product_url' => apply_filters('woocommerce_cart_redirect_after_error', get_permalink($product_id), $product_id));
+
+                echo wp_send_json($data);
+            }
+
+            wp_die();
+        }
+
+        //filter by attribute form
+        function display_att_shop(){
+            $subheadingvalues = get_terms('pa_limited-edition', array(
+                'hide_empty' => false,
+                ));
+                ?>
+                <form method='get'>
+                <label for='game_attribute'>Game Type: </label><select name='game_attribute' class='game_attribute'>
+                    <option value='all'>--Select--</option>
+                    <?php foreach ($subheadingvalues as $subheadingvalue): ?>
+                    <option value="<?php echo $subheadingvalue->slug; ?>">
+                        <?php echo $subheadingvalue->name; ?>
+                    </option>
+                    <?php endforeach;?>
+                </select>
+                <input type='submit' value='filter' name='submit'>
+                </form>
+                <?php
+        }
+        add_action('woocommerce_before_shop_loop','display_att_shop');
+
+
+        //filter by attribute callback
+        function fiter_att_shop($q){
+            if(isset($_GET['game_attribute']))
+            {
+                $attribute_type=esc_html($_GET['game_attribute']);
+                if('all' === $attribute_type || $attribute_type == '' )
+            {
+                return;
+            }
+
+            $tax_query = $q->get( 'tax_query' );
+
+            $taxonomy = 'pa_limited-edition'; 
+            $tax_query[] = array(
+                'taxonomy'  => $taxonomy,
+                'field'     => 'slug',
+                // 'operator'  => 'IN',
+                'terms'     => $attribute_type,
+            );
+        
+            $q->set( 'tax_query', $tax_query );
+            }
+            
+        }
+        add_action('woocommerce_product_query','fiter_att_shop');

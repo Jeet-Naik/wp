@@ -49,7 +49,6 @@ get_header();
 
 <div class="filter-wrap">
     <div class="category">
-      
         <label>Select category: </label>
             <?php $get_categories = get_categories( array( 'taxonomy'=>'book_category' ) ); ?>
             <select class="js-category">
@@ -77,7 +76,6 @@ get_header();
     </div>
 </div>
 </center>
-
 <center>
 <div class="filtered-posts">
 	<p>Content will be displayed here</p>
@@ -95,12 +93,12 @@ get_header();
 // 		'post_type' => 'book', 
 // 		'posts_per_page' => 2,
  		// 'paged' => $paged ,
-// 		'date_query' => array(
-// 			//set date ranges with strings!
-// 			'after' => 'today',
-// 			//allow exact matches to be returned
-// 			'inclusive'         => true,
-// 		),
+		// 'date_query' => array(
+		// 	//set date ranges with strings!
+		// 	'after' => 'today',
+		// 	//allow exact matches to be returned
+		// 	'inclusive'         => true,
+		// ),
 // 	)
 // );
 ?>

@@ -143,11 +143,11 @@ function fun_book_listing( $atts ) {
      ), $atts));
 
      $args=array(
-        'post_type' => 'book',
-        'post_status' => 'publish',
-        'orderby' => 'date', 
-        'order' => 'DESC' , 
-        'showposts' => $count
+        'post_type'     => 'book',
+        'post_status'   => 'publish',
+        'orderby'       => 'date', 
+        'order'         => 'DESC' , 
+        'showposts'     => $count
     );
 
      //taxonomy
@@ -238,11 +238,12 @@ function cd_customizer_settings( $wp_customize ) {
     'section'   => 'cd_header',
     'settings'  => 'cd_header_display',
     'type'      => 'select',
-    'choices'   => array(
-        'Header_1'  => 'Header Layout 1',
-        'Header_2'  => 'Header Layout 2',
-    ),
-  ) );
+    'choices'   =>
+        array(
+            'Header_1'  => 'Header Layout 1',
+            'Header_2'  => 'Header Layout 2',
+        ),
+    ));
 
 }
 add_action( 'customize_register', 'cd_customizer_settings' );

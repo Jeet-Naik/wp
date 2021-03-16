@@ -80,10 +80,93 @@ jQuery(document).ready(function($){
 		});
 	}
 
-	jQuery(window).load(function() {
+	jQuery ( window ).load(function() {
 		// alert('slidee');
 		jQuery('.flexslider').flexslider({
 		  animation: "slide"
 		});
 	});
+
+
+	(function ($) {
+		$( document ).on( 'click', '.single_add_to_cart_button', function(e) {
+		e.preventDefault();
+		var $thisbutton = $(this),
+                $form = $thisbutton.closest('form.cart'),
+                id = $thisbutton.val(),
+                product_qty = $form.find('input[name=quantity]').val() || 1,
+                product_id = $form.find('input[name=product_id]').val() || id,
+                variation_id = $form.find('input[name=variation_id]').val() || 0;
+
+        var data = {
+            action: 'woocommerce_ajax_add_to_cart',
+            product_id: product_id,
+            product_sku: '',
+            quantity: product_qty,
+            variation_id: variation_id,
+        };
+
+        $(document.body).trigger('adding_to_cart', [$thisbutton, data]);
+		if ( $form.find('input[name=variation_id]').length > 0 && variation_id == 0 ) { return false; }
+        $.ajax({
+            type: 'post',
+            url: myAjax.ajaxurl,
+            data: data,
+            beforeSend: function (response) {
+                $thisbutton.removeClass('added').addClass('loading');
+            },
+            complete: function (response) {
+                $thisbutton.addClass('added').removeClass('loading');
+            },
+            success: function (response) {
+				alert("Item added to cart successfully");
+			
+				console.log(response);	
+                if (response.error && response.product_url) {
+                    window.location = response.product_url;
+                    return;
+                } 
+				// else {
+				// 	// $form.hide();
+                //     $(document.body).trigger('added_to_cart', [response.fragments, response.cart_hash, $thisbutton]);
+                // }
+				$( document.body ).trigger( 'added_to_cart', [ response.fragments, response.cart_hash, $thisbutton ] );
+				if ( wc_add_to_cart_params.cart_redirect_after_add === 'yes' ) {
+					window.location = wc_add_to_cart_params.cart_url;
+					return;
+				}
+				// Remove existing notices
+				$( '.woocommerce-error, .woocommerce-message, .woocommerce-info' ).remove();
+
+				// Add new notices
+				$form.before(response.fragments.notices_html)
+				console.log(("Notice :- "+ response.fragments.notices_html));
+
+				$form.unblock();
+            },
+        });
+
+        return false;
+		});
+		})(jQuery);
+
+		// (function ($) {
+		// 	$( document ).on( 'change', '.game_attribute', function(e) {
+		// 		// var category= $('select[name=game_attribute]').val() // Here we can get the value of selected item
+		// 		var category= $(this).val() 
+		// 		alert(category);
+		// 		jQuery.ajax({
+		// 			url: myAjax.ajaxurl,
+		// 			type: "POST",
+		// 			async: true, 
+		// 			data:{
+		// 				'action': 'filter_by_attribute',
+		// 				'category': category,
+		// 			},
+		// 			success: function(data) {
+		// 				alert(data);
+		// 			},  
+		// 		});
+		// 	});
+		// })(jQuery);
 });
