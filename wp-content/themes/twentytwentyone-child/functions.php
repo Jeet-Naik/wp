@@ -288,6 +288,12 @@ function woocommerce_ajax_add_to_cart() {
 
         //filter by attribute form
         function display_att_shop(){
+            if(isset($_GET['game_attribute']))
+            {
+                $attribute_type=esc_html($_GET['game_attribute']);
+            }else{
+                $attribute_type='all';
+            }
             $subheadingvalues = get_terms('pa_limited-edition', array(
                 'hide_empty' => false,
                 ));
@@ -296,7 +302,7 @@ function woocommerce_ajax_add_to_cart() {
                 <label for='game_attribute'>Game Type: </label><select name='game_attribute' class='game_attribute'>
                     <option value='all'>--Select--</option>
                     <?php foreach ($subheadingvalues as $subheadingvalue): ?>
-                    <option value="<?php echo $subheadingvalue->slug; ?>">
+                    <option value="<?php echo $subheadingvalue->slug; ?>" <?php selected($attribute_type, $subheadingvalue->slug); ?>>
                         <?php echo $subheadingvalue->name; ?>
                     </option>
                     <?php endforeach;?>
@@ -324,7 +330,6 @@ function woocommerce_ajax_add_to_cart() {
             $tax_query[] = array(
                 'taxonomy'  => $taxonomy,
                 'field'     => 'slug',
-                // 'operator'  => 'IN',
                 'terms'     => $attribute_type,
             );
         
