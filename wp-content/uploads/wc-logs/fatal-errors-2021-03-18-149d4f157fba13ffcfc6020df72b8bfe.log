@@ -1,0 +1,39 @@
+2021-03-18T05:26:18+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function apply_filters(), 1 passed in G:\xampp\htdocs\wp\wp-content\themes\jeet_custom\header.php on line 5 and exactly 2 expected in G:\xampp\htdocs\wp\wp-includes\plugin.php:187
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-content\themes\jeet_custom\header.php(5): apply_filters('my_filter')
+#1 G:\xampp\htdocs\wp\wp-includes\template.php(730): require_once('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\wp-includes\template.php(676): load_template('G:\\xampp\\htdocs...', true, Array)
+#3 G:\xampp\htdocs\wp\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 G:\xampp\htdocs\wp\wp-content\themes\jeet_custom\index.php(2): get_header()
+#5 G:\xampp\htdocs\wp\wp-includes\template-loader.php(106): include('G:\\xampp\\htdocs...')
+#6 G:\xampp\htdocs\wp\wp-blog-header.php(19): require_once('G:\\xampp\\htdocs...')
+#7 G:\xampp\htdocs\wp\index.php(17): require('G:\\xampp\\htdocs...')
+#8 {main}
+  thrown in G:\xampp\htdocs\wp\wp-includes\plugin.php on line 187
+
+2021-03-18T05:26:18+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function apply_filters(), 1 passed in G:\xampp\htdocs\wp\wp-content\themes\jeet_custom\header.php on line 5 and exactly 2 expected in G:\xampp\htdocs\wp\wp-includes\plugin.php:187
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-content\themes\jeet_custom\header.php(5): apply_filters('my_filter')
+#1 G:\xampp\htdocs\wp\wp-includes\template.php(730): require_once('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\wp-includes\template.php(676): load_template('G:\\xampp\\htdocs...', true, Array)
+#3 G:\xampp\htdocs\wp\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 G:\xampp\htdocs\wp\wp-content\themes\jeet_custom\index.php(2): get_header()
+#5 G:\xampp\htdocs\wp\wp-includes\template-loader.php(106): include('G:\\xampp\\htdocs...')
+#6 G:\xampp\htdocs\wp\wp-blog-header.php(19): require_once('G:\\xampp\\htdocs...')
+#7 G:\xampp\htdocs\wp\index.php(17): require('G:\\xampp\\htdocs...')
+#8 {main}
+  thrown in G:\xampp\htdocs\wp\wp-includes\plugin.php on line 187
+
+2021-03-18T05:26:18+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function apply_filters(), 1 passed in G:\xampp\htdocs\wp\wp-content\themes\jeet_custom\header.php on line 5 and exactly 2 expected in G:\xampp\htdocs\wp\wp-includes\plugin.php:187
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-content\themes\jeet_custom\header.php(5): apply_filters('my_filter')
+#1 G:\xampp\htdocs\wp\wp-includes\template.php(730): require_once('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\wp-includes\template.php(676): load_template('G:\\xampp\\htdocs...', true, Array)
+#3 G:\xampp\htdocs\wp\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 G:\xampp\htdocs\wp\wp-content\themes\jeet_custom\index.php(2): get_header()
+#5 G:\xampp\htdocs\wp\wp-includes\template-loader.php(106): include('G:\\xampp\\htdocs...')
+#6 G:\xampp\htdocs\wp\wp-blog-header.php(19): require_once('G:\\xampp\\htdocs...')
+#7 G:\xampp\htdocs\wp\index.php(17): require('G:\\xampp\\htdocs...')
+#8 {main}
+  thrown in G:\xampp\htdocs\wp\wp-includes\plugin.php on line 187
+

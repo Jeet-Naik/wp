@@ -1,0 +1,18 @@
+2021-03-20T06:29:50+00:00 CRITICAL Cannot redeclare gutenberg_examples_01_register_block() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\Jeet_custom\Jeet_custom.php:480) in G:\xampp\htdocs\wp\wp-content\plugins\custom_block\custom_block.php on line 30
+
+2021-03-20T06:29:51+00:00 CRITICAL Cannot redeclare gutenberg_examples_01_register_block() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\Jeet_custom\Jeet_custom.php:480) in G:\xampp\htdocs\wp\wp-content\plugins\custom_block\custom_block.php on line 30
+
+2021-03-20T06:29:51+00:00 CRITICAL Cannot redeclare gutenberg_examples_01_register_block() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\Jeet_custom\Jeet_custom.php:480) in G:\xampp\htdocs\wp\wp-content\plugins\custom_block\custom_block.php on line 30
+
+2021-03-20T06:30:01+00:00 CRITICAL Cannot redeclare gutenberg_examples_01_register_block() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\Jeet_custom\Jeet_custom.php:480) in G:\xampp\htdocs\wp\wp-content\plugins\custom_block\custom_block.php on line 30
+
+2021-03-20T06:30:02+00:00 CRITICAL Cannot redeclare gutenberg_examples_01_register_block() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\Jeet_custom\Jeet_custom.php:480) in G:\xampp\htdocs\wp\wp-content\plugins\custom_block\custom_block.php on line 30
+
+2021-03-20T06:30:02+00:00 CRITICAL Cannot redeclare gutenberg_examples_01_register_block() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\Jeet_custom\Jeet_custom.php:480) in G:\xampp\htdocs\wp\wp-content\plugins\custom_block\custom_block.php on line 30
+
+2021-03-20T06:52:18+00:00 CRITICAL Cannot redeclare gutenberg_examples_01_register_block() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\custom_block\custom-block.php:16) in G:\xampp\htdocs\wp\wp-content\plugins\gutenberg-examples\01-basic\index.php on line 57
+
+2021-03-20T06:52:19+00:00 CRITICAL Cannot redeclare gutenberg_examples_01_register_block() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\custom_block\custom-block.php:16) in G:\xampp\htdocs\wp\wp-content\plugins\gutenberg-examples\01-basic\index.php on line 57
+
+2021-03-20T06:52:19+00:00 CRITICAL Cannot redeclare gutenberg_examples_01_register_block() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\custom_block\custom-block.php:16) in G:\xampp\htdocs\wp\wp-content\plugins\gutenberg-examples\01-basic\index.php on line 57
+

@@ -32,8 +32,15 @@ jQuery(document).ready(function($){
 	// listener/callback for the pagination clicks.
 	jQuery( '.filtered-posts' ).on( 'click', '.page-numbers', function( e ){
 		e.preventDefault();
-		var paged=$(this).text();
-		ajaxTestFunction( paged );
+		// var paged=$(this).text();
+		var href = $(this).attr('href'); 
+
+		var pageNumber = href.split( "/?page" )[ 0 ].split( "=" ).pop();
+		if(!pageNumber)
+		{
+			pageNumber=1;
+		}
+		ajaxTestFunction( pageNumber );
 	});
 
 
@@ -43,7 +50,8 @@ jQuery(document).ready(function($){
 		if( page_num == undefined)
 		{
 			page_num=1;
-		};
+		}
+	
 
 		var category = $( '.js-category' ).val();
 		var price_srt = $( '#price_src' ).val();
@@ -66,9 +74,12 @@ jQuery(document).ready(function($){
 			},
 			success : function( data ) {
                 console.log(data);
+				var html=data.posts;
+				var div=$(html).filter('#pagination');
+				$('.page-numbers').removeClass('.page-numbers').addClass('green');
 				if ( data ) {
                     
-					$('.filtered-posts').html( data.posts );
+					$('.filtered-posts').html( html );
 
 					$('.js-category').removeAttr('disabled');
 					$('.js-date').removeAttr('disabled');
@@ -97,7 +108,8 @@ jQuery(document).ready(function($){
                 product_qty = $form.find('input[name=quantity]').val() || 1,
                 product_id = $form.find('input[name=product_id]').val() || id,
                 variation_id = $form.find('input[name=variation_id]').val() || 0;
-
+				size= $form.find('input[name=attribute_pa_size]').val() || '';
+			alert("size"+size);
         var data = {
             action: 'woocommerce_ajax_add_to_cart',
             product_id: product_id,
@@ -105,6 +117,7 @@ jQuery(document).ready(function($){
             quantity: product_qty,
             variation_id: variation_id,
         };
+		console.log("Data"+data);
 
         $(document.body).trigger('adding_to_cart', [$thisbutton, data]);
 		if ( $form.find('input[name=variation_id]').length > 0 && variation_id == 0 ) { return false; }
@@ -119,9 +132,9 @@ jQuery(document).ready(function($){
                 $thisbutton.addClass('added').removeClass('loading');
             },
             success: function (response) {
-				alert("Item added to cart successfully");
+				// alert("Item added to cart successfully");
 			
-				console.log(response);	
+				console.log("Response"+response);	
                 if (response.error && response.product_url) {
                     window.location = response.product_url;
                     return;
@@ -142,7 +155,7 @@ jQuery(document).ready(function($){
 				$form.before(response.fragments.notices_html)
 				console.log(("Notice :- "+ response.fragments.notices_html));
 
-				$form.unblock();
+				// $form.unblock();
             },
         });
 
@@ -150,7 +163,7 @@ jQuery(document).ready(function($){
 		});
 		})(jQuery);
 
-		// (function ($) {
+		// 	function ($) {
 		// 	$( document ).on( 'change', '.game_attribute', function(e) {
 		// 		// var category= $('select[name=game_attribute]').val() // Here we can get the value of selected item
 		// 		var category= $(this).val() 

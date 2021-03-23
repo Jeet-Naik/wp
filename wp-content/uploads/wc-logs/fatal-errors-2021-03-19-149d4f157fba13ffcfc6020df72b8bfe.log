@@ -1,0 +1,49 @@
+2021-03-19T09:40:52+00:00 CRITICAL syntax error, unexpected 'vc_map' (T_STRING) in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 342
+
+2021-03-19T09:41:52+00:00 CRITICAL Uncaught Exception: Wrong vc_map object. Base attribute is required in G:\xampp\htdocs\wp\wp-content\plugins\js_composer\include\helpers\helpers_api.php:37
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php(342): vc_map(NULL)
+#1 G:\xampp\htdocs\wp\wp-settings.php(528): include('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\wp-config.php(91): require_once('G:\\xampp\\htdocs...')
+#3 G:\xampp\htdocs\wp\wp-load.php(37): require_once('G:\\xampp\\htdocs...')
+#4 G:\xampp\htdocs\wp\wp-admin\admin-ajax.php(22): require_once('G:\\xampp\\htdocs...')
+#5 {main}
+  thrown in G:\xampp\htdocs\wp\wp-content\plugins\js_composer\include\helpers\helpers_api.php on line 37
+
+2021-03-19T09:42:52+00:00 CRITICAL Uncaught Exception: Wrong vc_map object. Base attribute is required in G:\xampp\htdocs\wp\wp-content\plugins\js_composer\include\helpers\helpers_api.php:37
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php(342): vc_map(NULL)
+#1 G:\xampp\htdocs\wp\wp-settings.php(528): include('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\wp-config.php(91): require_once('G:\\xampp\\htdocs...')
+#3 G:\xampp\htdocs\wp\wp-load.php(37): require_once('G:\\xampp\\htdocs...')
+#4 G:\xampp\htdocs\wp\wp-admin\admin-ajax.php(22): require_once('G:\\xampp\\htdocs...')
+#5 {main}
+  thrown in G:\xampp\htdocs\wp\wp-content\plugins\js_composer\include\helpers\helpers_api.php on line 37
+
+2021-03-19T09:43:53+00:00 CRITICAL Uncaught Exception: Wrong vc_map object. Base attribute is required in G:\xampp\htdocs\wp\wp-content\plugins\js_composer\include\helpers\helpers_api.php:37
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php(343): vc_map(NULL)
+#1 G:\xampp\htdocs\wp\wp-settings.php(528): include('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\wp-config.php(91): require_once('G:\\xampp\\htdocs...')
+#3 G:\xampp\htdocs\wp\wp-load.php(37): require_once('G:\\xampp\\htdocs...')
+#4 G:\xampp\htdocs\wp\wp-admin\admin-ajax.php(22): require_once('G:\\xampp\\htdocs...')
+#5 {main}
+  thrown in G:\xampp\htdocs\wp\wp-content\plugins\js_composer\include\helpers\helpers_api.php on line 37
+
+2021-03-19T09:44:54+00:00 CRITICAL Cannot redeclare fun_book_listing() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\Jeet_custom\Jeet_custom.php:214) in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 411
+
+2021-03-19T09:45:55+00:00 CRITICAL Cannot redeclare fun_book_listing() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\Jeet_custom\Jeet_custom.php:214) in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 411
+
+2021-03-19T09:46:50+00:00 CRITICAL Cannot redeclare fun_book_listing() (previously declared in G:\xampp\htdocs\wp\wp-content\plugins\Jeet_custom\Jeet_custom.php:214) in G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php on line 411
+
+2021-03-19T09:47:32+00:00 CRITICAL Uncaught Exception: Wrong vc_map object. Base attribute is required in G:\xampp\htdocs\wp\wp-content\plugins\js_composer\include\helpers\helpers_api.php:37
+Stack trace:
+#0 G:\xampp\htdocs\wp\wp-content\themes\twentytwentyone-child\functions.php(343): vc_map(NULL)
+#1 G:\xampp\htdocs\wp\wp-settings.php(528): include('G:\\xampp\\htdocs...')
+#2 G:\xampp\htdocs\wp\wp-config.php(91): require_once('G:\\xampp\\htdocs...')
+#3 G:\xampp\htdocs\wp\wp-load.php(37): require_once('G:\\xampp\\htdocs...')
+#4 G:\xampp\htdocs\wp\wp-admin\admin.php(34): require_once('G:\\xampp\\htdocs...')
+#5 G:\xampp\htdocs\wp\wp-admin\post-new.php(10): require_once('G:\\xampp\\htdocs...')
+#6 {main}
+  thrown in G:\xampp\htdocs\wp\wp-content\plugins\js_composer\include\helpers\helpers_api.php on line 37
+

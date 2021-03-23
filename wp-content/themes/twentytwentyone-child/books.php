@@ -17,26 +17,14 @@ get_header();
     <ul class="slides">
     <?php
     $rows = get_field('slide');
-	// echo "<pre>";
-	// print_r($rows);
-	// echo "</pre>";
-	// die;
     if($rows) {
 	
         foreach($rows as $row) {
-            // retrieve size 'large' for background image
-			// echo "<pre>";
-			// print_r($row);
-			// echo "</pre>";
-			// die;
-			// $bgimg = $row&#91;'bg_image'&#93;&#91;'sizes'&#93;&#91;'large'&#93;;
+
 			$bgimg =$row['bg_image']['sizes']['large'];
  
             $output = "<li style='background-image: url(". $bgimg .");'>\n";
-            $output .= "  <div class='slide-text'>\n";
-            // $output .= "  <h2>". $row['slide_heading'] ."</h2>\n";
-            // $output .= "  " . $row['slide_text'];
-            $output .= "  </div>\n";
+  
             $output .= "</li>\r\n\n";
  
             echo $output;
